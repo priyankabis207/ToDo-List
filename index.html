@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.js" integrity="sha512-AsoAG+OFcSvtqlspW166UTUYg7F4GEu0yNhzTIRfOGysIQA8Dqk1WZwyoN4eX6mX4DaSk703Q1iM0M47rw25Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <link href="ToDo.css" rel="stylesheet">
+    <script defer src="Script.js"></script>
+</head>
+<body>
+   <div class="container"> 
+       <h1 class="col" align="center"> ToDo List </h1>  
+       <figure>
+        <blockquote style="color: #0e3528; margin-top: 10px;" class="blockquote">
+            <p align="center">
+                “Subtracting from your list of priorities is as important as adding to it.”
+            </p>
+        </blockquote>
+        <figcaption align="center" style="margin-bottom: 50px" class="blockquote-footer">
+            Frank Sonnenberg <cite title="Source Title"> Soul Food: Change Your Thinking, Change Your Life</cite><br>
+        </figcaption>
+    </figure>
+    <div class="row">
+        <div class="col-8">
+          <div class="form-group">
+
+            <input type="email" class="form-control" id="inpNewTask" aria-describedby="emailHelp" placeholder="Enter a task">
+            <small id="newTaskHelp" class="form-text text-muted">Start now!</small>
+          </div>
+        </div>
+        <div class="col">
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with functional button"></div>
+            <div class="btn-group" role="group" aria-label="Functions">
+              <button type="button" class="btn btn-success" disabled id="btnAdd"> <i class="fas fa-plus-square"></i> Add </i></button>
+              <button type="button" class="btn btn-danger" disabled id="btnClear"> <i class="fas fa-backspace"> </i> Clear </i></button>
+              <button type="button" class="btn btn-primary" disabled id="btnSort"> <i class="fas fa-sort-amount-down"></i> Sort </button>
+              <button type="button" class="btn btn-warning" disabled id="btnCleanup"> <i class="fas fa-trash-alt"></i> Cleanup </button>
+            </div>
+        </div>
+    </div> 
+    <ol class="list-group list-group-flush list-group-numbered col-6" id="olTasks">
+        
+    </ol>
+</div>
+
+</body>
+</html>
